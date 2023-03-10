@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: test
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+      h2:
+        console:
+          enabled: true
+
+redis:
+  database: develhopeRedisExample
+  password: 1dA6FFS0t9zIzQXuoljxQZJC30mCm5BG
+  host: redis-19758.c10.us-east-1-2.ec2.cloud.redislabs.com:19758
+  port: 19758
+
+---
+environment:
+redis:
+  host: localhost
+  port: 6375
+  password:
